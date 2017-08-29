@@ -110,7 +110,7 @@ end
 def winner
   if won?
     win_combination = won?
-    if @oard[win_combination[0]] == "X"
+    if @board[win_combination[0]] == "X"
       return "X"
     else
       return "O"
