@@ -91,3 +91,10 @@ def full?
   return true
 end
 
+def draw?
+  if full? && !won?
+    return true
+  else
+    return false
+  end
+end
