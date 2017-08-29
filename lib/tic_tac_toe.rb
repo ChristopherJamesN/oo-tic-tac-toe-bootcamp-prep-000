@@ -79,3 +79,15 @@ def won?
   end
   return false
 end
+
+def full?
+  count = 0
+  while count < 9
+    if position_taken?(count) == false
+      return false
+    end
+    count += 1
+  end
+  return true
+end
+
