@@ -117,3 +117,18 @@ def winner
     end
   end
 end
+
+def play
+  while !over?
+    turn
+  end
+  if winner == "X"
+    puts "Congratulations #{winner}!"
+  elsif winner == "O"
+    puts "Congratulations #{winner}!"
+  else
+    puts "Cat's Game!"
+  end
+end
+end
+
